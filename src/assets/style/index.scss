@@ -1,4 +1,10 @@
 @import "base/_import";
 body{
-    background-color: #f09;
+    background-color: #eee;
+}
+.unselected{
+    color:red !important;
+}
+.selected{
+    color:#09c !important;
 }

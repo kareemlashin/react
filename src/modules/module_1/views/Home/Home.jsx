@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 
+import { connect } from 'react-redux';
+
 //import { Test } from './Home.styles';
 
 class Home extends PureComponent { 
@@ -42,9 +44,11 @@ class Home extends PureComponent {
     }
     return (
       <div className="HomeWrapper">
-    
         Test content
       </div>
     );
   }
 }
+
+
+export default connect

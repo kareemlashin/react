@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 
-//import { Test } from './Home.styles';
+//import { Test } from './Contact.styles';
 
-class Home extends PureComponent { 
+class Contact extends PureComponent { 
   constructor(props) {
     super(props);
 
@@ -12,28 +12,27 @@ class Home extends PureComponent {
   }
 
   componentWillMount = () => {
-    console.log('Home will mount');
+    console.log('Contact will mount');
   }
 
   componentDidMount = () => {
-    console.log('Home mounted');
+    console.log('Contact mounted');
   }
 
   componentWillReceiveProps = (nextProps) => {
-    console.log('Home will receive props', nextProps);
+    console.log('Contact will receive props', nextProps);
   }
 
   componentWillUpdate = (nextProps, nextState) => {
-    console.log('Home will update', nextProps, nextState);
+    console.log('Contact will update', nextProps, nextState);
   }
 
-
   componentDidUpdate = () => {
-    console.log('Home did update');
+    console.log('Contact did update');
   }
 
   componentWillUnmount = () => {
-    console.log('Home will unmount');
+    console.log('Contact will unmount');
   }
 
   render () {
@@ -41,10 +40,13 @@ class Home extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="HomeWrapper">
-    
-        Test content
+      <div className="ContactWrapper">
+        Test contact contact contact contact
       </div>
     );
   }
 }
+
+
+
+export default Contact;

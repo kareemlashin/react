@@ -1,13 +1,14 @@
 [-] scss
-[*] basic 
-[*] route 
-[*] guard
-[*] formik 
-[*] [*] dynamic
-[*] axios
-[*] [*] interceptors
-[*] REDUX
+[-] basic 
+[-] route 
+[-] guard
+[-] lazy 
+[-] axios
+[-] [-] interceptors 
+[-] formik
+[-] [-] dynamic
 [*] UI
+[*] REDUX
 [*] Hooks
 [*] NEXT.JS
 [*] Unit-Test
