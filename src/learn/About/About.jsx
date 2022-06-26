@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
 
-import { connect } from 'react-redux';
+//import { Test } from './About.styles';
 
-
-class Home extends PureComponent { 
+class About extends PureComponent { 
   constructor(props) {
     super(props);
 
@@ -13,28 +12,27 @@ class Home extends PureComponent {
   }
 
   componentWillMount = () => {
-    console.log('Home will mount');
+    console.log('About will mount');
   }
 
   componentDidMount = () => {
-    console.log('Home mounted');
+    console.log('About mounted');
   }
 
   componentWillReceiveProps = (nextProps) => {
-    console.log('Home will receive props', nextProps);
+    console.log('About will receive props', nextProps);
   }
 
   componentWillUpdate = (nextProps, nextState) => {
-    console.log('Home will update', nextProps, nextState);
+    console.log('About will update', nextProps, nextState);
   }
 
-
   componentDidUpdate = () => {
-    console.log('Home did update');
+    console.log('About did update');
   }
 
   componentWillUnmount = () => {
-    console.log('Home will unmount');
+    console.log('About will unmount');
   }
 
   render () {
@@ -42,17 +40,10 @@ class Home extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="HomeWrapper">
-        Test content
+      <div className="AboutWrapper">
+        Test AboutWrapper AboutWrapper AboutWrapper
       </div>
     );
   }
 }
-
-
-
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Home);
+export default About

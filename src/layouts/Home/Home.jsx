@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+
 //import { Test } from './Home.styles';
 
 class Home extends PureComponent { 
@@ -49,24 +48,3 @@ class Home extends PureComponent {
     );
   }
 }
-
-Home.propTypes = {
-  // bla: PropTypes.string,
-};
-
-Home.defaultProps = {
-  // bla: 'test',
-};
-
-const mapStateToProps = state => ({
-  // blabla: state.blabla,
-});
-
-const mapDispatchToProps = dispatch => ({
-  // fnBlaBla: () => dispatch(action.name()),
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Home);

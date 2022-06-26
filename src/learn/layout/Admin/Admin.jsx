@@ -2,9 +2,14 @@ import React, { PureComponent } from 'react';
 
 import { Outlet } from 'react-router-dom';
 
+import Nav from '../../Nav/Nav';
+
+//import { Test } from './Admin.styles';
+
 class Admin extends PureComponent { 
   constructor(props) {
     super(props);
+
     this.state = {
       hasError: false,
     };
@@ -26,7 +31,6 @@ class Admin extends PureComponent {
     console.log('Admin will update', nextProps, nextState);
   }
 
-
   componentDidUpdate = () => {
     console.log('Admin did update');
   }
@@ -43,10 +47,11 @@ class Admin extends PureComponent {
       <div className="AdminWrapper">
         <div>
         Admin Admin Admin
+        <Nav></Nav>
+
         </div>
         <div>
         <Outlet />
-
         </div>
         <div>
         Admin Admin Admin
@@ -55,3 +60,6 @@ class Admin extends PureComponent {
     );
   }
 }
+
+
+export default Admin;
